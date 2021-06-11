@@ -8,7 +8,7 @@ describe('switching betwwen the windows', function(){
         });
         element(by.css('#intro > div.homepage-container > div')).getText().then(function(txt){
            // console.log(txt);
-            expect(txt).toEqual('One framework.\nMobile & desktop.');
+            expect(txt).toEqual('The modern web\ndeveloper\'s platform');
         });
         browser.getAllWindowHandles().then(function (winHandle) {
             browser.switchTo().window(winHandle[0]);
